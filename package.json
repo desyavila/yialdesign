@@ -1,0 +1,25 @@
+{
+  "name": "2020",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devYasser/yfrontend.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Yasser Avila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devYasser/yfrontend/issues"
+  },
+  "homepage": "https://github.com/devYasser/yfrontend#readme",
+  "dependencies": {
+    "github-calendar": "^2.1.1"
+  }
+}

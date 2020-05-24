@@ -1654,11 +1654,26 @@ figure.effect-winston:hover p {
 }
 
 
+.instagram {
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	justify-items: center;
+	max-width: 1600px;
+	margin: auto;
+}
 
-										/**
-										  8.0 MEDIA QUERIES
-										 ----------------------------------------------------------------------------
-										*/
+.instagram figure img {
+	border: 1px solid pink;
+	height: auto;
+	max-width: 450px;
+}
+
+/**
+	8.0 MEDIA QUERIES
+	----------------------------------------------------------------------------
+*/
 
 
 @-ms-viewport {
@@ -1866,6 +1881,9 @@ figure.effect-winston:hover p {
 	}
 	.invert{
 	order:0;
+	}
+	.instagram {
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
