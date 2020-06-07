@@ -1,6 +1,6 @@
 async function callingFn() {
     try {
-        const response = await fetch("https://v1.nocodeapi.com/yfront/instagram/reQvBgmbSvVhwvgG?limit=5", {
+        const response = await fetch("https://v1.nocodeapi.com/yfront/instagram/reQvBgmbSvVhwvgG?limit=6", {
             method: "get",
             headers: {
                 "Content-Type": "application/json"
@@ -21,8 +21,10 @@ function renderInsta(item){
     <figure>
         <a target="_blank" href="${item.permalink}">
             <img src="${item.media_url}" alt="${item.caption}">
-            <figcaption>${item.caption}</figcaption>
-            <div class="date">${item.timestamp}</div>
+            <div class="inst-info">
+                <figcaption>${item.caption}</figcaption>
+                <div class="date">${item.timestamp}</div>
+            </div>    
         </a>
     </figure>
     `)
