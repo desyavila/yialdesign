@@ -1357,7 +1357,7 @@ figure.effect-winston:hover p {
 	font-size: 1.3rem;
 	color: #A39B9B;
 	line-height: 1.45;
-	font-weight: 200;
+	font-weight: 400;
 	margin: 0 30% 2% 30%;
 	text-align: left;
 }
@@ -1664,6 +1664,7 @@ figure.effect-winston:hover p {
 	justify-items: center;
 	max-width: 1600px;
 	margin: auto;
+	padding: 15px;
 }
 
 .instagram figure {
@@ -1711,6 +1712,7 @@ figure.effect-winston:hover p {
 	display: block;
 	margin: auto;
 	padding: 2rem;
+	background-color: #fff;
 }
 
 .text-contact{
@@ -1721,7 +1723,7 @@ figure.effect-winston:hover p {
     font-size: 1.3rem;
     color: #A39B9B;
     line-height: 1.45;
-	font-weight: 200;
+	font-weight: 400;
 	text-align: center;
 }
 
@@ -1939,6 +1941,10 @@ figure.effect-winston:hover p {
 	}
 	.instagram {
 		grid-template-columns: 1fr 1fr;
+	}
+	.instagram figure img {
+		/* border: 1px solid pink; */
+		height: auto;
 	}
 }
 

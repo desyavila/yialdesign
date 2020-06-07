@@ -14,8 +14,16 @@ async function callingFn() {
     }
 }
 
+function dateFormat ( date ){
+    dateF = new Date(date);
+    var month = dateF.getMonth() + 1;
+    var day = dateF.getDate();
+    var year = dateF.getFullYear();
+    return month + "/" + day + "/" + year;
+}
 
 function renderInsta(item){
+    let dateF = dateFormat(item.timestamp);
     return(
     `
     <figure>
@@ -23,7 +31,7 @@ function renderInsta(item){
             <img src="${item.media_url}" alt="${item.caption}">
             <div class="inst-info">
                 <figcaption>${item.caption}</figcaption>
-                <div class="date">${item.timestamp}</div>
+                <div class="date">${dateF}</div>
             </div>    
         </a>
     </figure>
@@ -33,7 +41,6 @@ const $instaArea = document.querySelector('#instagram');
 async function loadInsta(){
     const dataInsta = await callingFn();
     dataInsta.data.forEach((item) => {
-         console.log(item)
         const renderString = renderInsta(item);
         $instaArea.innerHTML += renderString;
     })
